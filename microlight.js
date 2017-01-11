@@ -28,12 +28,7 @@
         opacity       = 'opacity:.',
         _0px_0px      = ' 0px 0px ',
         _3px_0px_5    = '3px 0px 5',
-        brace         = ')',
-
-        el,  // current microlighted element to run through
-
-        // dynamic set of nodes to highlight
-        microlighted = _document.getElementsByClassName('microlight');
+        brace         = ')';
 
 
     var process = function(text, color) {
@@ -195,25 +190,5 @@
         return output;
     }
 
-    var reset = function(i) {
-        if (isNaN(i)) {
-            i = 0;
-        }
-
-        for (;el = microlighted[i++];) {
-            el.innerHTML = process(
-                el.textContent,
-                _window.getComputedStyle(el).color
-            );
-        }
-    };
-
-    exports.process = process;
-    exports.reset   = reset;
-
-    if (_document.readyState == 'complete') {
-        reset();
-    } else {
-        _window.addEventListener('load', reset, 0);
-    }
+    exports.microlight = {process: process};
 }));

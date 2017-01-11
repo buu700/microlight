@@ -1,6 +1,6 @@
 {
 	"name": "microlight-string",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Fork of microlight that returns output as string",
 	"main": "./microlight.min.js",
 	"types": "./microlight.d.ts",
