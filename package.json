@@ -2,11 +2,11 @@
 	"name": "microlight-string",
 	"version": "1.0.1",
 	"description": "Fork of microlight that returns output as string",
-	"main": "./microlight.min.js",
-	"types": "./microlight.d.ts",
+	"main": "./microlight-string.min.js",
+	"types": "./microlight-string.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/buu700/microlight.git"
+		"url": "git://github.com/buu700/microlight-string.git"
 	},
 	"keywords": [
 		"syntax",
@@ -21,6 +21,6 @@
 	"author": "Ryan Lester <hacker@linux.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/buu700/microlight/issues"
+		"url": "https://github.com/buu700/microlight-string/issues"
 	}
 }
